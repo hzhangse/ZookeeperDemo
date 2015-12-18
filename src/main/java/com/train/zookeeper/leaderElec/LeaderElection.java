@@ -40,7 +40,7 @@ public class LeaderElection extends TestMainClient {
 		try {
 
 			leader = zk.getData(root + "/leader", true, null);
-			
+
 		} catch (KeeperException e) {
 			if (e instanceof KeeperException.NoNodeException) {
 				logger.error(e);
@@ -100,15 +100,15 @@ public class LeaderElection extends TestMainClient {
 	}
 
 	void following() {
-//		try {
-//			zk.setData(root + "/leader", "".getBytes(), -1);
-//		} catch (KeeperException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		// try {
+		// zk.setData(root + "/leader", "".getBytes(), -1);
+		// } catch (KeeperException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// } catch (InterruptedException e) {
+		// // TODO Auto-generated catch block
+		// e.printStackTrace();
+		// }
 		// System.out.println("leader exist , following");
 	}
 
